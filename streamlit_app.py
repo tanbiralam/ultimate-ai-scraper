@@ -24,9 +24,20 @@ from urllib.parse import urlparse
 from assets import PRICING
 import os
 
-# Initialize Streamlit app
+# # Initialize Streamlit app
+# st.set_page_config(page_title="Universal Web Scraper", page_icon="🦑")
+# st.title("Universal Web Scraper 🦑")
+
+# Set up page configuration with a title and an icon
 st.set_page_config(page_title="Universal Web Scraper", page_icon="🦑")
+
+# Main title and description
 st.title("Universal Web Scraper 🦑")
+st.markdown("""
+    **Automate data extraction** from any webpage with this powerful scraper. 
+    Simply provide the URL, select the data fields to extract, and configure additional options for pagination or attended scraping mode.
+""")
+
 
 # Initialize session state variables
 if 'scraping_state' not in st.session_state:
