@@ -103,6 +103,62 @@ This module manages API keys required for external service interactions, ensurin
 
 ---
 
+## Running the Scraper
+
+To run the scraper application across different operating systems (Windows, Linux, and macOS), follow the instructions below. Ensure that you have the necessary dependencies installed, such as Python and any required libraries.
+
+### Prerequisites
+
+1. **Python Installation**: Ensure that Python 3.7 or later is installed on your system. You can download it from the [official Python website](https://www.python.org/downloads/).
+2. **Virtual Environment (Optional but Recommended)**:
+   - It's advisable to create a virtual environment to manage dependencies. You can use `venv` for this.
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On macOS/Linux
+   venv\Scripts\activate     # On Windows
+   ```
+3. **Install Required Libraries**: Install the necessary libraries by running the following command in your terminal:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Running the Application
+
+#### For Windows
+
+1. Open Command Prompt.
+2. Navigate to the project directory where `streamlit_app.py` is located:
+   ```bash
+   cd path\to\your\project
+   ```
+3. Run the Streamlit application:
+   ```bash
+   streamlit run streamlit_app.py
+   ```
+
+#### For Linux and macOS
+
+1. Open a terminal.
+2. Navigate to the project directory where `streamlit_app.py` is located:
+   ```bash
+   cd path/to/your/project
+   ```
+3. Run the Streamlit application:
+   ```bash
+   streamlit run streamlit_app.py
+   ```
+
+### Accessing the Application
+
+Once the application is running, it will provide a local URL (usually `http://localhost:8501`) in the terminal. Open this URL in your web browser to access the Streamlit application and interact with the scraper.
+
+### Notes
+
+- Ensure that you have all API keys configured in the environment or session state as required by the application.
+- If you encounter any permission issues or errors related to missing libraries, make sure your environment is correctly set up and that you have the necessary permissions to execute the scripts.
+
+---
+
 ## Conclusion
 
 This documentation provides a comprehensive overview of each file within the project. Each module plays a critical role in building a cohesive web scraping and data extraction application. Proper implementation of features like session management, API integration, and dynamic content handling enhances the overall functionality and user experience.
